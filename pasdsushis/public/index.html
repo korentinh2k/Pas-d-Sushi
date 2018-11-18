@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>	
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+</head>
+<header>
+	<div class="container-fluid">
+		<div>
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" style="color: white; ">Pas d'Sushi</a>
+			    </div>
+			    <ul class="nav navbar-nav navbar-right">
+			      <li><a class="btn" data-toggle="modal" data-target="#SignUpModal" style="color: white; font-weight: bold;"><span class="glyphicon glyphicon-user"></span> - Créer un compte</a></li>
+			      <li><a class="btn"  style=" color: white; font-weight: bold;"><span class="glyphicon glyphicon-log-in"></span> - Se connecter</a></li>
+			    </ul>
+			  </div>
+			</nav>
+		</div>
+	</div>
+</header>
+<body>
+  <div id="MyApp">
+    
+    <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="SignUpModalLabel">Création d'un nouveau compte :</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="newUsername" class="col-form-label">Nom d'utilisateur :</label>
+                  <input type="text" class="form-control" id="newUsername">
+                </div>
+                <div class="form-group">
+                  <label for="newPassword" class="col-form-label">Mot de passe :</label>
+                  <input type="password" class="form-control" id="newPassword">
+                </div>
+                <div class="form-group">
+                  <label for="newPasswordVerif" class="col-form-label">Confirmation de mot de passe :</label>
+                  <input type="password" class="form-control" id="newPasswordVerif">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Quitter</button>
+              <button type="button" class="btn btn-primary" v-on:click="signup" id="submit">Allez !</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="container-fluid" style="padding-top: 135px">
+      <div class="container">
+        <p style="text-align: center;">
+          <img src="https://cdn.glitch.com/be1cc56d-122b-42a1-970c-93f761441af3%2Fmain.png?1542541825094" width="400" height="400">
+        </p>
+      </div>
+      <div class="container" style="width: 20%">
+        <form  class="form" >
+          <div>
+            <div style="height: 8px;">
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" name="user_username" class="form-control" placeholder="Nom d'utilisateur">
+              </div>
+            <div class="form-group">
+                <input type="password" id="password" name="user_password" class="form-control" placeholder="Mot de passe">
+              </div>
+              <div class="button" style="margin-top: 7px; margin-bottom: 10px">
+              <button type="button" style="background-color: grey;" class="btn btn-info" v-on:click="connect" >Allez, on va manger !</button>
+            </div>
+            </div>
+        </form>
+      </div>
+    </div>
+        
+  </div>
+</body>
+<script type="text/javascript" src="../js/index.js"></script>
+</html>

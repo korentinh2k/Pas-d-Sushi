@@ -1,0 +1,265 @@
+html{
+	background: WhiteSmoke;
+}
+
+a.CensierBeaumont{
+	color: Black;
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size:50px;
+}
+
+div.entete{
+	display:flex;
+	color: Black;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+div.cart{ 
+	font-family:"Times New Roman", Times, serif;
+	color:Black;
+} 
+
+div.cartitem{
+  display: inline-block;
+}
+
+div.removebutton{
+  margin-left:auto;
+  vertical-align: middle;
+}
+
+img.removebutton{
+  height : 20px;
+  width : 20px;
+}
+
+.buybutton{
+  font-family:"Times New Roman", Times, serif;
+	font-size:18px;
+	color:Black;
+}
+ 
+
+img{
+    width: 100px;
+    height: 70px;
+}
+
+div.imgcart{
+	margin-top:5px;
+}
+
+div.groupeboutons{
+	display:inline-block;
+}
+
+button.bouton2{
+	display: flex;
+	margin-top:20px;
+	margin-right:50px;
+	padding: 1px 1px;
+	background : White;
+	border : Black;
+	font-family : "Times New Roman", Times, serif;
+	color: Black;
+	font-style: italic;
+	font-size: 30px;
+	border-radius: 30px;
+	border-color:Black;
+}
+
+button.bouton2:hover{
+	background:LightGrey;
+	color:Purple;
+}
+
+button.addtocart
+{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: Black;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: Bold; 
+}
+
+.removeFromCart
+{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+}
+
+
+
+button.btnrose {
+	padding: 20px 30px; 
+	margin: 25px;
+	background: #960024; 
+	font-family: "Courrier New", Times, serif;
+	color: White;
+	font-style: normal;
+	font-size: 36px;
+	border-radius: 15px;
+	border-color:Black;
+}
+
+button.btnrose:hover {
+	background: #457FC2;
+	border-color:Purple;
+}
+
+
+button.btnrose2 {
+	padding: 40px 50px; 
+	margin: 5px;
+	background: Black; 
+	font-family: "Courrier New", Times, serif;
+	color: Black;
+	font-style: normal;
+	font-size: 36px;
+	border-radius: 12px;
+	border-color:Black;
+	
+}
+
+button.btnrose2:hover {
+	background-color: Purple;
+	border-color:Purple;
+}
+
+.btn.btn-primary:active{
+	background-color: Purple !important;
+	border-color:Purple;	
+}
+
+.btn.btn-primary:focus{
+	background-color: Purple !important;
+	border-color:Purple;	
+}
+
+.name, .name:hover
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: Purple;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.price, .price:hover{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: Black;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+.description, .description:hover{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: Black;
+  font-style: italic;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+img.article{
+  margin-left:auto;
+	border:1px solid Purple;
+	border-width: 2px;
+	border-radius: 8px;
+	height:200px;
+	width:250px;
+  float: left;
+}
+
+
+div.app{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  
+  margin-right:auto;
+  margin-left:auto;
+}
+
+
+div.item{
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.koko_image {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.titres {
+    margin-top: 50px;
+    text-decoration-line: underline;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.taille-carousel {
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.robin_image {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.koko_image > img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.robin_image > img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.member_deatile > h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 25px;
+    font-weight: bold;
+}
+.team_detaillée {
+    text-align: center;
+    margin: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.member_description{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
